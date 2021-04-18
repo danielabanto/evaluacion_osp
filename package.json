@@ -1,9 +1,12 @@
 {
-  "name": "reto",
+  "name": "veripost",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://danielabanto.github.io/evaluacion_osp",
   "scripts": {
+    "predeploy": "npm run build:pro",
+    "deploy": "gh-pages -d dist",
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
     "build:dll": "webpack --config ./webpack.pro.dll.config.js --mode production",
     "build:pro": "webpack --config ./webpack.pro.config.js --mode production"
